@@ -1,0 +1,368 @@
+<html>
+  <head>
+    <meta name="description" content="Hello this is my first web page!." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styles.css" />
+   
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img
+            src="./asset/logo.png"
+            alt="logo"
+            class="brand__logo"
+          />
+        </div>
+
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down"
+              >
+              <option value="Francais" selected>Francais</option>
+              <option value="English">English</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="nav__item">
+            <button class="signin__button">S'identifier</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg__image__container">
+          <img
+            src="./asset/back.jpg"
+            alt="BG hero image"
+            class="hero__bg__image"
+          />
+        </div>
+        <div class="hero__bg__overlay"></div>
+
+        <div class="hero__card">
+          <h1 class="hero__title">
+            Films, séries et bien plus .<br />
+            en illimité
+          </h1>
+          <p class="hero__subtitle">Où que vous soyez. Annulez à tout moment.
+          </p>
+          <p class="hero__description">
+            Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.
+          </p>
+
+          <div class="email__form__container">
+            <div class="form__container">
+              <input type="email" class="email__input" placeholder=" " />
+              <label class="email__label">Email Address</label>
+            </div>
+            <button class="primary__button">
+              Commencer > <i class="fal fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="features__container">
+        <!-- Feature 1 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Regardez Netflix sur votre TV.
+            </h3>
+            <h5 class="feature__sub__title">
+              Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast,
+               Apple TV, lecteurs Blu-ray et bien plus.
+            </h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="./asset/tv.png"
+              alt="Feature image"
+              class="feature__image"
+            />
+            <div class="feature__backgroud__video__container">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="feature__backgroud__video"
+              >
+                <source
+                  src="./asset/1.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">
+              Téléchargez vos séries préférées pour les regarder hors connexion.
+
+            </h3>
+            <h5 class="feature__sub__title">
+              Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.
+            </h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="./asset/st.jpg"
+              alt="Feature image"
+              class="feature__image"
+            />
+            <div class="feature__2__poster__container">
+              <div class="poster__container">
+                <img
+                  src="./asset/devices.png"
+                  alt="poster"
+                  class="poster"
+                />
+              </div>
+              <div class="poster__details">
+                <h4>Stranger Things</h4>
+                <h6>Téléchargement...</h6>
+              </div>
+              <div class="download__gif__container">
+                <img
+                  src="./asset/dl-icon.gif"
+                  alt="downloading gif"
+                  class="gif"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Où que vous soyez.
+            </h3>
+            <h5 class="feature__sub__title">
+              Regardez des films et séries en accès illimité sur votre TV,
+               smartphone, tablette et ordinateur, tout compris.
+            </h5>
+          </div>
+          <div class="feature__image__container feature__3__image__container">
+            <img
+              src="./asset/devices.png"
+              alt="Feature image"
+              class="feature__image feature__3__image"
+            />
+            <div
+              class="
+                feature__backgroud__video__container
+                feature__3__backgroud__video__container
+              "
+            >
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="feature__backgroud__video feature__3__backgroud__video"
+              >
+                <source
+                  src="./asset/2.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature">
+          <div class="feature__details">
+            <h3 class="feature__title">Créez des profils pour les enfants.</h3>
+            <h5 class="feature__sub__title">
+              Les enfants découvrent de nouvelles aventures et retrouvent leurs
+               personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.</h5>
+          </div>
+          <div class="feature__image__container">
+            <img
+              src="./asset/kids.jpg"
+              alt="Feature image"
+              class="feature__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="FAQ__list__container">
+        <h1 class="FAQ__heading">Foire aux questions</h1>
+        <div class="FAQ__list">
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Netflix, qu'est-ce que c'est ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix est un service de streaming qui propose une vaste sélection de séries,
+                 films, animes, documentaires et autres programmes primés sur des milliers
+                  d'appareils connectés à Internet.
+              </p>
+              <p>
+                Regardez tout ce que vous voulez, quand vous voulez, sans publicité 
+                et à un tarif mensuel très attractif. Découvrez de nouveaux films
+                 et séries chaque semaine, il y en a pour tous les goûts !
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Combien coûte Netflix ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Regardez Netflix sur votre smartphone, tablette, Smart TV,
+                 ordinateur ou appareil de streaming, le tout pour un tarif
+                  mensuel fixe. Les forfaits vont de 8,99 € à 17,99 € par mois.
+                   Pas de contrat ni de frais supplémentaires.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Où puis-je regarder Netflix ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix, c'est où vous voulez, quand vous voulez.
+                Connectez-vous à votre compte pour regarder Netflix
+                en ligne sur netflix.com depuis votre ordinateur ou
+                tout appareil connecté à Internet avec l'application
+                Netflix, comme les Smart TV, smartphones, tablettes,
+                lecteurs de streaming et consoles de jeu.
+              </p>
+              <p>
+                Vous pouvez aussi télécharger vos séries préférées avec
+                l'application iOS, Android ou Windows 10.
+                Téléchargez des titres pour les regarder sur votre
+                appareil mobile, même sans connexion Internet.
+                Emportez Netflix partout avec vous.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Comment puis-je annuler mon forfait ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix offre une grande souplesse. Pas de contrat compliqué.
+                Sans engagement. Deux clics suffisent pour annuler votre compte en ligne.
+                Pas de frais d'annulation : ouvrez ou fermez votre compte à tout moment.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Que puis-je regarder sur Netflix ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                  Netflix propose un vaste catalogue comprenant notamment des longs métrages,
+                  des documentaires, des séries, des animes et des programmes originaux Netflix primés.
+                  Regardez Netflix à volonté, quand vous le voulez.
+              </p>
+            </div>
+          </div>
+          <div class="FAQ__accordian">
+            <button class="FAQ__title">
+              Est-ce que Netflix est adapté aux enfants ?<i class="fal fa-plus"></i>
+            </button>
+            <div class="FAQ__visible">
+              <p>
+                Netflix Jeunesse est inclus dans votre abonnement
+                et offre un meilleur contrôle aux parents, ainsi
+                qu'un espace dédié aux enfants, avec des films et
+                des séries destinés à toute la famille.
+              </p>
+              <p>
+                Les profils Jeunesse comportent des fonctionnalités
+                de contrôle parental avec code PIN permettant de modifier
+                la catégorie d'âge des contenus que vos enfants peuvent 
+                regarder et de bloquer des titres spécifiques.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="FAQ__get__started__email">
+          <h3>
+            Prêt à regarder Netflix ?
+             Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.
+          </h3>
+          <div class="email__form__container">
+            <div class="form__container">
+              <input type="email" class="email__input" placeholder=" " />
+              <label class="email__label">Adresse Email</label>
+            </div>
+            <button class="primary__button">
+              Commencer > <i class="fal fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__row__1">
+        <h4>Des questions ? Appelez le (+33) 0805-543-063</h4>
+      </div>
+      <div class="footer__row__2">
+        <div class="column__1">
+          <p>FAQ</p>
+          <p>Relations Investisseurs</p>
+          <p>Mode de lecture</p>
+          <p>Mentions légales</p>
+          <p>Informations légales</p>
+        </div>
+        <div class="column__2">
+          <p>Centre d'aide</p>
+          <p>Recrutement</p>
+          <p>Condition d'utilisation</p>
+          <p>Nous contacter</p>
+          <p>Seulement sur Netflix</p>
+          
+        </div>
+        <div class="column__3">
+          <p>Compte</p>
+          <p>Utiliser des cartes cadeaux</p>
+          <p>Confidentialité</p>
+          <p>Test de vitesse</p>
+        </div>
+        <div class="column__4">
+          <p>Presse</p>
+          <p>Acheter des cartes cadeaux</p>
+          <p>Préférences de cookies</p>
+          <p>Garantie légale</p>
+        </div>
+      </div>
+      <div class="footer__row__3">
+        <div class="dropdown__container">
+          <i class="fas fa-globe"></i>
+          <select
+            name="languages"
+            id="languagesSelect"
+            class="language__drop__down"
+          >
+            <option value="Francais" selected>Francais</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer__row__4">
+        <p>Netflix France</p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
